@@ -1,0 +1,1 @@
+# Mozilla-thunderbird-guideline
