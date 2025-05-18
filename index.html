@@ -6,169 +6,146 @@
   <title>Mozilla Thunderbird Installation Guide</title>
   <link rel="icon" type="image/png" href="image/thunderbirdlogo.png" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #00539f;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav {
-      background: #004080;
-      padding: 0.5rem;
-      position: relative;
-    }
-    nav .nav-links {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-      padding: 0.5rem 0.8rem;
-      border-radius: 4px;
-      transition: background 0.2s;
-    }
-    nav a:hover {
-      background: #003366;
-      text-decoration: underline;
-    }
-    /* Hamburger menu styles */
-    /* Hamburger menu styles removed */
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      box-sizing: border-box;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    h2 {
-      color: #00539f;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    .step-box {
-      background: #e1eaff;
-      margin: 1rem 0;
-      padding: 1rem;
-      border-left: 5px solid #00539f;
-      border-radius: 4px;
-    }
-    .image-box {
-      display: block;
-      width: 100%;
-      height: auto;
-      max-height: 400px;
-      margin-top: 1rem;
-      border: 2px dashed #00539f;
-      border-radius: 8px;
-    }
-    button#tipsBtn {
-      background: #00539f;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      font-size: 1rem;
-      border-radius: 4px;
-    }
-    button#tipsBtn:hover {
-      background: #003366;
-    }
-    .tips {
-      display: none;
-      background: #d9edf7;
-      border-left: 4px solid #31708f;
-      margin-top: 1rem;
-      padding: 1rem;
-      color: #31708f;
-    }
-    section#install {
-      background-color: #f1f7ff;
-      padding: 2rem;
-      border-radius: 8px;
-      margin-bottom: 3rem;
-    }
-    section#setup {
-      background-color: #fff9f1;
-      padding: 2rem;
-      border-radius: 8px;
-    }
-    #backToTopBtn {
-      display: none;
-      position: fixed;
-      bottom: 40px;
-      right: 40px;
-      z-index: 99;
-      font-size: 18px;
-      border: none;
-      outline: none;
-      background-color: #00539f;
-      color: white;
-      cursor: pointer;
-      padding: 12px 20px;
-      border-radius: 50px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-      transition: background 0.2s;
-    }
-    #backToTopBtn:hover {
-      background-color: #003366;
-    }
-    /* Responsive styles */
-    @media (max-width: 900px) {
-      main {
-        margin: 1rem;
-        padding: 1rem;
-      }
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.3rem;
-      }
-      nav .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
-        background: #004080;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        display: none;
-        padding: 0.5rem 0;
-      }
-      nav .nav-links.active {
-        display: flex;
-      }
-      .hamburger {
-        display: flex;
-      }
-      main {
-        padding: 0.5rem;
-      }
-      .step-box {
-        padding: 0.7rem;
-        font-size: 0.97rem;
-      }
-      .image-box {
-        max-height: 220px;
-      }
-      #backToTopBtn {
-        bottom: 20px;
-        right: 20px;
-        padding: 10px 14px;
-        font-size: 1rem;
-      }
-    }
+     body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #0072c6;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background: #005a9e;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0072c6;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        .step-box {
+            background: #e1eaff;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-left: 5px solid #0072c6;
+            border-radius: 4px;
+        }
+        .image-box {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            margin-top: 1rem;
+            border: 2px dashed #0072c6;
+            border-radius: 8px;
+        }
+        button#tipsBtn {
+            background: #0072c6;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 4px;
+        }
+        button#tipsBtn:hover {
+            background: #005a9e;
+        }
+        .tips {
+            display: none;
+            background: #d9edf7;
+            border-left: 4px solid #31708f;
+            margin-top: 1rem;
+            padding: 1rem;
+            color: #31708f;
+        }
+        section#install {
+            background-color: #f1f7ff;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+        }
+        section#setup {
+            background-color: #fff9f1;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        #backToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #0072c6;
+            color: white;
+            cursor: pointer;
+            padding: 12px 20px;
+            border-radius: 50px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            transition: background 0.2s;
+        }
+        #backToTopBtn:hover {
+            background-color: #005a9e;
+        }
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            main {
+                max-width: 100%;
+                margin: 0;
+                padding: 1rem;
+                box-shadow: none;
+            }
+            header {
+                padding: 0.5rem;
+            }
+            nav a {
+                margin: 0 0.5rem;
+                font-size: 1rem;
+            }
+            section#install,
+            section#setup {
+                padding: 1rem;
+                border-radius: 0;
+            }
+            .step-box {
+                padding: 0.7rem;
+                font-size: 1rem;
+            }
+            .image-box {
+                max-height: 200px;
+                margin-top: 0.5rem;
+            }
+            #backToTopBtn {
+                bottom: 16px;
+                right: 16px;
+                font-size: 16px;
+                padding: 10px 16px;
+            }
+        }
   </style>
 </head>
 <body>
@@ -178,17 +155,12 @@
   </header>
 
   <nav>
-    <div class="hamburger" id="hamburgerBtn" aria-label="Open navigation" tabindex="0">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="nav-links" id="navLinks">
-      <a href="#install">Installation</a>
-      <a href="#setup">Setup Email Account</a>
-      <a href="#send">Send Email</a>
-    </div>
-  </nav>
+        <div style="text-align: center;">
+            <a href="#install">Installation</a>
+            <a href="#setup">Setup Email Account</a>
+            <a href="#send">Send Email</a>
+        </div>
+    </nav>
 
   <main>
     <section id="install">
@@ -266,7 +238,7 @@
         <strong>3.2 Compose Your Email</strong>
         <p>In the new message window, enter the recipient's email address in the <b>"To"</b> field.</p>
         <p>Add a subject and type your message in the main area.</p><br>
-        <p>You can also attach all type of file on the top right</p>
+        <p>You can also attach all type of file on the top</p>
         <img src="image/send_2.jpg" alt="Compose Email" class="image-box" />
         </div>
         <div class="step-box">
@@ -282,29 +254,16 @@
       <!-- Smooth scroll for nav links -->
       <script>
         document.addEventListener("DOMContentLoaded", function() {
-          // Hamburger menu toggle
-          const hamburger = document.getElementById('hamburgerBtn');
-          const navLinks = document.getElementById('navLinks');
-          hamburger.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-          });
-          hamburger.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter' || e.key === ' ') {
-              navLinks.classList.toggle('active');
-            }
-          });
-          // Smooth scroll for nav links
-          document.querySelectorAll('nav a[href^="#"]').forEach(function(anchor) {
-            anchor.addEventListener('click', function(e) {
-              e.preventDefault();
-              navLinks.classList.remove('active');
-              const target = document.querySelector(this.getAttribute('href'));
-              if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
-              }
+            document.querySelectorAll('nav a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+                });
             });
-          });
-        });
+            });
       </script>
       <!-- Floating Back to Top Button -->
       <button id="backToTopBtn" title="Go to top">&#8679; Top</button>
